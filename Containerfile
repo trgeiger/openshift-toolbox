@@ -1,6 +1,6 @@
 ARG FEDORA_MAJOR_VERSION="${FEDORA_MAJOR_VERSION:-37}"
 
-FROM registry.fedoraproject.org/fedora-toolbox:${FEDODRA_MAJOR_VERSION}
+FROM registry.fedoraproject.org/fedora-toolbox:${FEDORA_MAJOR_VERSION}
 
 # Install Openshift tools -- oc, opm, kubectl, operator-sdk, odo, helm, crc
 RUN curl -SL https://mirror.openshift.com/pub/openshift-v4/x86_64/clients/ocp/latest/opm-linux.tar.gz | tar xvzf - -C /usr/bin
